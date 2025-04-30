@@ -1,0 +1,10 @@
+.Noticia{
+    display: flex;
+}
+
+.CapaNoticia{
+    border-radius: 30px;
+    width: 40%;
+    border: 1px solid black;
+}
+
