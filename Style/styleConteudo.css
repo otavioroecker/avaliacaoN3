@@ -1,0 +1,14 @@
+body{
+    margin: 0%;
+}
+
+nav{
+    background-color: #37A58F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    height: 50px;
+}
