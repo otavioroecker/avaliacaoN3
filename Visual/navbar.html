@@ -15,19 +15,19 @@
             <img src="/img/logo 1.png" alt="Logo">
         </div>
         <div class="menu-de-busca">
-            <div class="busca"><img src="/img/search.png" alt="Busca"></div>
+            <div class="busca"><img src="/img/search.png" alt="Busca" onclick = "abrirBarraBusca()"></div>
             <div class="menu"><img src="/img/menu.png" alt="Menu" onclick = "abrirBarraLateral()"></div>
         </div>
     </nav>
 
-    <div class="barra-busca">
+    <div class="barra-busca" id="barra-busca">
             <div class="retangulo">
                 <img src="/img/search.png" alt="Busca">
-                
+                <input type="text" placeholder="Search...">
             </div>
     </div>
 
-    <div class="overlay" id ="overlay" onclick = "fecharBarraLateral()"></div>
+    <div class="overlay" id ="overlay" onclick = "fecharTudo()"></div>
 
     <div class="barra-lateral" id="barra-lateral">
         <div class="logo">
@@ -54,6 +54,11 @@
         <div class="linha"></div>
         <a href="#" class="a-barra-lateral">Sobre Nós</a>
     </div>
+
+    <div class="teste">Falta terminar os bugs.</div>
+    <div class="teste2">Falta terminar os bugs.</div>
+    <div class="teste">Falta terminar os bugs.</div>
+    <div class="teste2">Falta terminar os bugs.</div>
 </body>
 
 </html>
