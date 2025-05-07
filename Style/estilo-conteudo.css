@@ -4,17 +4,76 @@ body{
 
 nav{
     background-color: #37A58F;
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     padding: 0px 15px;
 }
 
+.menu{
+    cursor: pointer;
+}
+
+.busca{
+    cursor: pointer;
+}
+
 .menu-de-busca{
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 img{
     height: 50px;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.barra-lateral{
+    background-color: #37A58F;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -2px 1px 20px;
+    transition: right 0.3ms ease;
+    z-index: 1001;
+}
+
+.barra-lateral.ativa{
+    right: 0;
+}
+
+.linha{
+    background-color: rgba(255, 255, 255, 0.493);
+    width: 250px;
+    height: 1px;   
+    margin-top: 5px;
+    margin-bottom: 5px; 
+}
+
+.linha-sem-margin-top{
+    background-color: rgba(255, 255, 255, 0.493);
+    width: 250px;
+    height: 1px;  
+    margin-bottom: 5px;
+}
+
+.a-barra-lateral{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
 }

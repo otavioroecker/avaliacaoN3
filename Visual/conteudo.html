@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/estilo-conteudo.css">
+    <script src="/Script/script.js"></script>
     <title>Document</title>
 </head>
 
@@ -14,23 +15,37 @@
             <img src="/img/logo 1.png" alt="Logo">
         </div>
         <div class="menu-de-busca">
-            <img src="/img/search.png" alt="Busca">
-            <img src="/img/menu.png" a  lt="Menu">
+            <div class="busca"><img src="/img/search.png" alt="Busca"></div>
+            <div class="menu"><img src="/img/menu.png" alt="Menu" onclick = "abrirBarraLateral()"></div>
         </div>
     </nav>
 
+    <div class="overlay" id ="overlay" onclick = "fecharBarraLateral()"></div>
+
     <div class="barra-lateral" id="barra-lateral">
-        <img src="/img/logo 1.png" alt="Logo">
-        <a href="#">Times Série A</a>
-        <a href="#">Times Série B</a>
-        <a href="#">Fut. Europeu</a>
-        <a href="#">Futebol</a>
-        <a href="#">Basquete</a>
-        <a href="#">Vôlei</a>
-        <a href="#">Tênis</a>
-        <a href="#">Surfe</a>
-        <a href="#">Fórmula 1</a>
-        <a href="#">Sobre Nós</a>
+        <div class="logo">
+            <img src="/img/logo 1.png" alt="Logo">
+        </div>
+        <div class="linha-sem-margin-top"></div>
+        <a href="#" class="a-barra-lateral">Times Série A</a>
+        <div class="linha"></div>
+        <a href="#" class="a-barra-lateral">Times Série B</a>
+        <div class="linha"></div>
+        <a href="#" class="a-barra-lateral">Fut. Europeu</a>
+        <div class="linha"></div>
+        <a href="#" class="a-barra-lateral">Futebol</a>
+        <div class="linha"></div>
+        <a href="#" class="a-barra-lateral">Basquete</a>
+        <div class="linha"></div>
+        <a href="#" class="a-barra-lateral">Vôlei</a>
+        <div class="linha"></div>
+        <a href="#" class="a-barra-lateral">Tênis</a>
+        <div class="linha"></div>
+        <a href="#" class="a-barra-lateral">Surfe</a>
+        <div class="linha"></div>
+        <a href="#" class="a-barra-lateral">Fórmula 1</a>
+        <div class="linha"></div>
+        <a href="#" class="a-barra-lateral">Sobre Nós</a>
     </div>
 </body>
 
