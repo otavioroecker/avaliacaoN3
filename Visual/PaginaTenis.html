@@ -5,34 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Report</title>
     <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="/Style/estiloNavbar.css">
+    <script src="/Script/script.js"></script>
 </head>
 <body>
-    <section class="Noticia">
-        <div class="ImagemNoticia">
-            <img src="../Img/img10.avif" alt="Jogador de tênis João Fonseca">
+    <nav>
+        <div class="logo">
+            <img src="/img/logo 1.png" alt="Logo">
         </div>
-        <div class="TituloNoticia">
-            <h1>João Fonseca ficará um mês sem competir até o Masters 1000 de Madrid</h1>
+        <div class="menu-de-busca">
+            <div class="busca"><img src="/img/search.png" alt="Busca" onclick = "abrirBarraBusca()"></div>
+            <div class="menu"><img src="/img/menu.png" alt="Menu" onclick = "abrirBarraLateral()"></div>
         </div>
-    </section>
+    </nav>
 
-    <section class="Noticia">
-        <div class="ImagemNoticia">
-            <img src="../Img/img11.avif" alt="Jogadora de tênis Emma Raducanu passando mal">
+    <div class="barra-busca" id="barra-busca">
+            <div class="retangulo">
+                <img src="/img/search.png" alt="Busca">
+                <input type="text" placeholder="Search...">
+            </div>
+    </div>
+
+    <div class="overlay" id ="overlay" onclick = "fecharTudo()"></div>
+
+    <div class="barra-lateral" id="barra-lateral">
+        <div class="logo">
+            <img src="/img/logo 1.png" alt="Logo">
         </div>
-        <div class="TituloNoticia">
-            <h1>Tenista britânica passa mal nas quartas de final do Miami Open</h1>
-        </div>
-    </section>
+        <div class="linha-sem-margin-top"></div>
+        <a href="PaginaSerieA.html" class="a-barra-lateral">Times Série A</a>
+        <div class="linha"></div>
+        <a href="PaginaSerieB.html" class="a-barra-lateral">Times Série B</a>
+        <div class="linha"></div>
+        <a href="PaginaEuropa.html" class="a-barra-lateral">Fut. Europeu</a>
+        <div class="linha"></div>
+        <a href="PaginaFutebol.html" class="a-barra-lateral">Futebol</a>
+        <div class="linha"></div>
+        <a href="PaginaBasquete.html" class="a-barra-lateral">Basquete</a>
+        <div class="linha"></div>
+        <a href="PaginaVolei.html" class="a-barra-lateral">Vôlei</a>
+        <div class="linha"></div>
+        <a href="PaginaTenis.html" class="a-barra-lateral">Tênis</a>
+        <div class="linha"></div>
+        <a href="PaginaSurfe.html" class="a-barra-lateral">Surfe</a>
+        <div class="linha"></div>
+        <a href="PaginaFormula1.html" class="a-barra-lateral">Fórmula 1</a>
+        <div class="linha"></div>
+        <a href="sobre.html" class="a-barra-lateral">Sobre Nós</a>
+    </div>
+    
+    <main class="containerNoticia">
+        <section class="Noticia">
+            <div class="ImagemNoticia">
+                <img src="../Img/img10.avif" alt="Jogador de tênis João Fonseca">
+            </div>
+            <div class="TituloNoticia">
+                <h1>João Fonseca ficará um mês sem competir até o Masters 1000 de Madrid</h1>
+            </div>
+        </section>
+        <section class="Noticia">
+            <div class="ImagemNoticia">
+                <img src="../Img/img11.avif" alt="Jogadora de tênis Emma Raducanu passando mal">
+            </div>
+            <div class="TituloNoticia">
+                <h1>Tenista britânica passa mal nas quartas de final do Miami Open</h1>
+            </div>
+        </section>
         
-    <section class="Noticia">
-        <div class="ImagemNoticia">
-            <img src="../Img/img12.avif" alt="Jogador de tênis Novak Djokovic">
-        </div>
-        <div class="TituloNoticia">
-            <h1>Atraso na programação força adiamento de jogo de Djokovic no Miami Open</h1>
-        </div>
-    </section>
+        <section class="Noticia">
+            <div class="ImagemNoticia">
+                <img src="../Img/img12.avif" alt="Jogador de tênis Novak Djokovic">
+            </div>
+            <div class="TituloNoticia">
+                <h1>Atraso na programação força adiamento de jogo de Djokovic no Miami Open</h1>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>

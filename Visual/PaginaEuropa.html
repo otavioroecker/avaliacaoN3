@@ -1,38 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Report</title>
     <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="/Style/estiloNavbar.css">
+    <script src="/Script/script.js"></script>
 </head>
-<body>
-    <section class="Noticia">
-        <div class="ImagemNoticia">
-            <img src="../Img/img22.avif" alt="Atacante Lamine Yamal do Barcelona">
-        </div>
-        <div class="TituloNoticia">
-            <h1>Yamal aposta no Barcelona na Champions: "Somos os favoritos"</h1>
-        </div>
-    </section>
 
-    <section class="Noticia">
-        <div class="ImagemNoticia">
-            <img src="../Img/img23.avif" alt="Jogador Van Basten batendo o pênalti">
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/img/logo 1.png" alt="Logo">
         </div>
-        <div class="TituloNoticia">
-            <h1>Van Basten critica pênalti anulado do Atlético de Madrid: "A Uefa tem a obrigação de consertar isso"</h1>
+        <div class="menu-de-busca">
+            <div class="busca"><img src="/img/search.png" alt="Busca" onclick="abrirBarraBusca()"></div>
+            <div class="menu"><img src="/img/menu.png" alt="Menu" onclick="abrirBarraLateral()"></div>
         </div>
-    </section>
-        
-    <section class="Noticia">
-        <div class="ImagemNoticia">
-            <img src="../Img/img24.avif" alt="Jogador Mohamed Salah do Liverpool">
+    </nav>
+
+    <div class="barra-busca" id="barra-busca">
+        <div class="retangulo">
+            <img src="/img/search.png" alt="Busca">
+            <input type="text" placeholder="Search...">
         </div>
-        <div class="TituloNoticia">
-            <h1>Salah é eleito melhor jogador do mês na Premier League e iguala recorde</h1>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="fecharTudo()"></div>
+
+    <div class="barra-lateral" id="barra-lateral">
+        <div class="logo">
+            <img src="/img/logo 1.png" alt="Logo">
         </div>
-    </section>
-    
+        <div class="linha-sem-margin-top"></div>
+        <a href="PaginaSerieA.html" class="a-barra-lateral">Times Série A</a>
+        <div class="linha"></div>
+        <a href="PaginaSerieB.html" class="a-barra-lateral">Times Série B</a>
+        <div class="linha"></div>
+        <a href="PaginaEuropa.html" class="a-barra-lateral">Fut. Europeu</a>
+        <div class="linha"></div>
+        <a href="PaginaFutebol.html" class="a-barra-lateral">Futebol</a>
+        <div class="linha"></div>
+        <a href="PaginaBasquete.html" class="a-barra-lateral">Basquete</a>
+        <div class="linha"></div>
+        <a href="PaginaVolei.html" class="a-barra-lateral">Vôlei</a>
+        <div class="linha"></div>
+        <a href="PaginaTenis.html" class="a-barra-lateral">Tênis</a>
+        <div class="linha"></div>
+        <a href="PaginaSurfe.html" class="a-barra-lateral">Surfe</a>
+        <div class="linha"></div>
+        <a href="PaginaFormula1.html" class="a-barra-lateral">Fórmula 1</a>
+        <div class="linha"></div>
+        <a href="sobre.html" class="a-barra-lateral">Sobre Nós</a>
+    </div>
+
+    <main class="containerNoticia">
+        <section class="Noticia">
+            <div class="ImagemNoticia">
+                <img src="../Img/img22.avif" alt="Atacante Lamine Yamal do Barcelona">
+            </div>
+            <div class="TituloNoticia">
+                <h1>Yamal aposta no Barcelona na Champions: "Somos os favoritos"</h1>
+            </div>
+        </section>
+        <section class="Noticia">
+            <div class="ImagemNoticia">
+                <img src="../Img/img23.avif" alt="Jogador Van Basten batendo o pênalti">
+            </div>
+            <div class="TituloNoticia">
+                <h1>Van Basten critica pênalti anulado do Atlético de Madrid: "A Uefa tem a obrigação de consertar isso"
+                </h1>
+            </div>
+        </section>
+        <section class="Noticia">
+            <div class="ImagemNoticia">
+                <img src="../Img/img24.avif" alt="Jogador Mohamed Salah do Liverpool">
+            </div>
+            <div class="TituloNoticia">
+                <h1>Salah é eleito melhor jogador do mês na Premier League e iguala recorde</h1>
+            </div>
+        </section>
+    </main>
+
 </body>
+
 </html>

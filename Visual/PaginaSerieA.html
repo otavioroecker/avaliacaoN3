@@ -5,34 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Report</title>
     <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="/Style/estiloNavbar.css">
+    <script src="/Script/script.js"></script>
 </head>
 <body>
-    <section class="Noticia">
-        <div class="ImagemNoticia">
-            <img src="../Img/img16.avif" alt="Zagueiro Danilo do Flamengo treinando">
+    <nav>
+        <div class="logo">
+            <img src="/img/logo 1.png" alt="Logo">
         </div>
-        <div class="TituloNoticia">
-            <h1>Veja como está o elenco do Flamengo às vésperas da estreia no Brasileirão</h1>
+        <div class="menu-de-busca">
+            <div class="busca"><img src="/img/search.png" alt="Busca" onclick = "abrirBarraBusca()"></div>
+            <div class="menu"><img src="/img/menu.png" alt="Menu" onclick = "abrirBarraLateral()"></div>
         </div>
-    </section>
+    </nav>
 
-    <section class="Noticia">
-        <div class="ImagemNoticia">
-            <img src="../Img/img17.avif" alt="Time do Bragantino treinando">
+    <div class="barra-busca" id="barra-busca">
+            <div class="retangulo">
+                <img src="/img/search.png" alt="Busca">
+                <input type="text" placeholder="Search...">
+            </div>
+    </div>
+
+    <div class="overlay" id ="overlay" onclick = "fecharTudo()"></div>
+
+    <div class="barra-lateral" id="barra-lateral">
+        <div class="logo">
+            <img src="/img/logo 1.png" alt="Logo">
         </div>
-        <div class="TituloNoticia">
-            <h1>Bragantino realiza treino técnico e tático em preparação para a estreia no Brasileirão</h1>
-        </div>
-    </section>
+        <div class="linha-sem-margin-top"></div>
+        <a href="PaginaSerieA.html" class="a-barra-lateral">Times Série A</a>
+        <div class="linha"></div>
+        <a href="PaginaSerieB.html" class="a-barra-lateral">Times Série B</a>
+        <div class="linha"></div>
+        <a href="PaginaEuropa.html" class="a-barra-lateral">Fut. Europeu</a>
+        <div class="linha"></div>
+        <a href="PaginaFutebol.html" class="a-barra-lateral">Futebol</a>
+        <div class="linha"></div>
+        <a href="PaginaBasquete.html" class="a-barra-lateral">Basquete</a>
+        <div class="linha"></div>
+        <a href="PaginaVolei.html" class="a-barra-lateral">Vôlei</a>
+        <div class="linha"></div>
+        <a href="PaginaTenis.html" class="a-barra-lateral">Tênis</a>
+        <div class="linha"></div>
+        <a href="PaginaSurfe.html" class="a-barra-lateral">Surfe</a>
+        <div class="linha"></div>
+        <a href="PaginaFormula1.html" class="a-barra-lateral">Fórmula 1</a>
+        <div class="linha"></div>
+        <a href="sobre.html" class="a-barra-lateral">Sobre Nós</a>
+    </div>
+
+    <main class="containerNoticia">
+        <section class="Noticia">
+            <div class="ImagemNoticia">
+                <img src="../Img/img16.avif" alt="Zagueiro Danilo do Flamengo treinando">
+            </div>
+            <div class="TituloNoticia">
+                <h1>Veja como está o elenco do Flamengo às vésperas da estreia no Brasileirão</h1>
+            </div>
+        </section>
+        <section class="Noticia">
+            <div class="ImagemNoticia">
+                <img src="../Img/img17.avif" alt="Time do Bragantino treinando">
+            </div>
+            <div class="TituloNoticia">
+                <h1>Bragantino realiza treino técnico e tático em preparação para a estreia no Brasileirão</h1>
+            </div>
+        </section>
         
-    <section class="Noticia">
-        <div class="ImagemNoticia">
-            <img src="../Img/img18.avif" alt="Volante Du Queiroz do Sport">
-        </div>
-        <div class="TituloNoticia">
-            <h1>Volante diz que derrota para Altos não vai afetar Sport para estreia no Brasileiro, contra o São Paulo</h1>
-        </div>
-    </section>
+        <section class="Noticia">
+            <div class="ImagemNoticia">
+                <img src="../Img/img18.avif" alt="Volante Du Queiroz do Sport">
+            </div>
+            <div class="TituloNoticia">
+                <h1>Volante diz que derrota para Altos não vai afetar Sport para estreia no Brasileiro, contra o São Paulo</h1>
+            </div>
+        </section>
+    </main>
     
 </body>
 </html>

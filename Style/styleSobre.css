@@ -2,6 +2,10 @@ body{
     margin: 0%;
 }
 
+.containerNoticia{
+    padding-top: 65px;
+}
+
 nav{
     background-color: #37A58F;
     display: flex;

@@ -4,6 +4,10 @@ body {
     margin: 20px;
 }
 
+.containerNoticia{
+    padding-top: 65px;
+}
+
 .Noticia {
     display: flex;
     margin-top: 20px;

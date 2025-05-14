@@ -8,8 +8,8 @@ nav{
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    padding: 0px 15px;
-    width: 100vw;
+    padding: 0px 15px 0px 0px;
+    width: 100%;
 }
 
 .menu{
@@ -23,6 +23,7 @@ nav{
 .menu-de-busca{
     display: flex;
     gap: 30px;
+    padding-right: 18px;
 }
 
 .menu-de-busca img{
@@ -33,8 +34,8 @@ nav{
     background-color: rgba(0, 0, 0, 0.1);
     display: none;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 1000;
 }
 
