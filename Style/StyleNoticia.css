@@ -28,10 +28,12 @@
     font-size: xx-large;
     color: #37A58F;
     font-family: sans-serif;
+    margin-bottom: 5px;
 }
 
 .TitulosNoticia h3{
     font-family: sans-serif;
+    margin-top: 0;
 }
 
 .TitulosNoticia{
@@ -47,4 +49,8 @@
     margin: 20px auto;     
     width: 95%;            
     max-width: 1100px; 
+}
+
+.Conteudo h1{
+    color: #37A58F;
 }
