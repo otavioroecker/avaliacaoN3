@@ -42,4 +42,15 @@ h1 {
     color: #37A58F;
 }
 
+.Noticia a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
 
+.ContainerBloco{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
