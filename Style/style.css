@@ -17,7 +17,14 @@ body {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
     padding: 15px;
     align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.Noticia:hover {
+    transform: scale(1.01); /* Leve zoom */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Sombra maior */
+    z-index: 10;
+  }
 
 .TituloNoticia {
     flex: 1 1 60%;
