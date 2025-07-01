@@ -1,13 +1,15 @@
 class CustomNavbar extends HTMLElement {
   constructor() {
     super();
+  }
+
+  connectedCallback() {
     this.innerHTML = `
       <style>
-        body {
-          margin: 0;
-        }
         nav {
           position: fixed;
+          top: 0;
+          z-index: 1100; /* Garante que fique acima de todo o conteúdo */
           background-color: #37A58F;
           display: flex; 
           justify-content: space-between;
@@ -117,10 +119,10 @@ class CustomNavbar extends HTMLElement {
         </div>
         <div class="menu-de-busca">
           <div class="busca">
-            <img src="/img/search.png" alt="Busca" onclick="abrirBarraBusca()">
+            <img src="/img/search.png" alt="Busca">
           </div>
           <div class="menu">
-            <img src="/img/menu.png" alt="Menu" onclick="abrirBarraLateral()">
+            <img src="/img/menu.png" alt="Menu">
           </div>
         </div>
       </nav>
@@ -132,7 +134,7 @@ class CustomNavbar extends HTMLElement {
         </div>
       </div>
 
-      <div class="overlay" id="overlay" onclick="fecharTudo()"></div>
+      <div class="overlay" id="overlay"></div>
 
       <div class="barra-lateral" id="barra-lateral">
         <div class="logo">

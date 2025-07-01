@@ -7,52 +7,10 @@
     <link rel="stylesheet" href="../Style/Style.css">
     <link rel="stylesheet" href="/Style/StyleNavbar.css">
     <script src="/Script/script.js"></script>
+    <script src="/Script/NavBarComponent.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="/img/logo 1.png" alt="Logo">
-        </div>
-        <div class="menu-de-busca">
-            <div class="busca"><img src="/img/search.png" alt="Busca" onclick = "abrirBarraBusca()"></div>
-            <div class="menu"><img src="/img/menu.png" alt="Menu" onclick = "abrirBarraLateral()"></div>
-        </div>
-    </nav>
-
-    <div class="barra-busca" id="barra-busca">
-            <div class="retangulo">
-                <img src="/img/search.png" alt="Busca">
-                <input type="text" placeholder="Search...">
-            </div>
-    </div>
-
-    <div class="overlay" id ="overlay" onclick = "fecharTudo()"></div>
-
-    <div class="barra-lateral" id="barra-lateral">
-        <div class="logo">
-            <img src="/img/logo 1.png" alt="Logo">
-        </div>
-        <div class="linha-sem-margin-top"></div>
-        <a href="SerieAPaginaPrincipal.html" class="a-barra-lateral">Times Série A</a>
-        <div class="linha"></div>
-        <a href="SerieBPaginaPrincipal.html" class="a-barra-lateral">Times Série B</a>
-        <div class="linha"></div>
-        <a href="EuropaPaginaPrincipal.html" class="a-barra-lateral">Fut. Europeu</a>
-        <div class="linha"></div>
-        <a href="FutebolPaginaPrincipal.html" class="a-barra-lateral">Futebol</a>
-        <div class="linha"></div>
-        <a href="BasquetePaginaPrincipal.html" class="a-barra-lateral">Basquete</a>
-        <div class="linha"></div>
-        <a href="VoleiPaginaPrincipal.html" class="a-barra-lateral">Vôlei</a>
-        <div class="linha"></div>
-        <a href="TenisPaginaPrincipal.html" class="a-barra-lateral">Tênis</a>
-        <div class="linha"></div>
-        <a href="SurfePaginaPrincipal.html" class="a-barra-lateral">Surfe</a>
-        <div class="linha"></div>
-        <a href="Formula1PaginaPrincipal.html" class="a-barra-lateral">Fórmula 1</a>
-        <div class="linha"></div>
-        <a href="PaginaSobre.html" class="a-barra-lateral">Sobre Nós</a>
-    </div>
+    <custom-navbar></custom-navbar>
     
     <main class="containerNoticia">
         <section class="Noticia">
