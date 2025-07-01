@@ -6,10 +6,14 @@ class CustomNavbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <style>
+
+        body{
+           margin: 0%;
+        }
         nav {
           position: fixed;
           top: 0;
-          z-index: 1100; /* Garante que fique acima de todo o conteúdo */
+          z-index: 1099; /* Fica abaixo da overlay e das barras */
           background-color: #37A58F;
           display: flex; 
           justify-content: space-between;
@@ -37,7 +41,7 @@ class CustomNavbar extends HTMLElement {
           position: fixed;
           width: 100%;
           height: 100%;
-          z-index: 1000;
+          z-index: 1100; /* Cobre o conteúdo e a navbar */
         }
         .barra-lateral {
           background-color: #37A58F;
@@ -51,7 +55,7 @@ class CustomNavbar extends HTMLElement {
           align-items: center;
           box-shadow: -2px 1px 20px;
           transition: right 0.3s ease;
-          z-index: 1001;
+          z-index: 1101; /* Fica acima da overlay */
         }
         .barra-lateral.ativa {
           right: 0;
@@ -85,7 +89,7 @@ class CustomNavbar extends HTMLElement {
           height: 100%;
           box-shadow: -2px 1px 20px;
           transition: right 0.3s ease;
-          z-index: 1001;
+          z-index: 1101; /* Também acima da overlay */
         }
         .barra-busca.ativa {
           right: 0;
