@@ -70,3 +70,45 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+@media (max-width: 768px) {
+
+  .ImagemTitulo {
+    flex-direction: column;
+    gap: 20px;
+    width: 95%;
+  }
+
+  .ImagemNaNoticia {
+    width: 100%;
+  }
+
+  .TitulosNoticia {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .TitulosNoticia h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  .TitulosNoticia h3 {
+    font-size: medium;
+    text-align: center;
+  }
+
+  .Conteudo {
+    font-size: large;
+    width: 90%;
+  }
+
+  table {
+    width: 100%;
+    font-size: small;
+  }
+
+  td, th {
+    padding: 6px;
+  }
+}

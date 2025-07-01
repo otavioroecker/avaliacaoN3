@@ -61,3 +61,42 @@ h1 {
     align-items: center;
     gap: 10px;
 }
+
+@media (max-width: 768px) {
+
+  .Noticia {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .ContainerBloco {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ImagemNoticia {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .ImagemNoticia img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .TituloNoticia {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .TituloNoticia h1 {
+    font-size: large;
+  }
+
+  .containerNoticia {
+    padding: 70px 10px 20px 10px;
+  }
+}
