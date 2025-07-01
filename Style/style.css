@@ -21,8 +21,8 @@ body {
 }
 
 .Noticia:hover {
-    transform: scale(1.01); /* Leve zoom */
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Sombra maior */
+    transform: scale(1.01); 
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); 
     z-index: 10;
   }
 
