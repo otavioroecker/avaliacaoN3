@@ -1,6 +1,6 @@
 # 📰 SportsReport
 
-**SportsReport** é um projeto de portal de notícias esportivas inspirado no G1 Globo Esporte. O site apresenta manchetes, notícias e conteúdos interativos sobre o mundo do esporte com foco em uma interface moderna, responsiva e intuitiva.
+**SportsReport** é um projeto de portal de notícias esportivas inspirado no GE Globo Esporte. O site apresenta manchetes, notícias e conteúdos interativos sobre o mundo do esporte com foco em uma interface moderna, responsiva e intuitiva.
 
 ---
 
